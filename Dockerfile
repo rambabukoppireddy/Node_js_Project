@@ -5,8 +5,7 @@ FROM node:14-alpine
 WORKDIR /app
 
 # Copy your application files into the container
-COPY package.json .
-COPY server.js .
+COPY . .
 
 # Install project dependencies
 RUN npm install express stripe dotenv
